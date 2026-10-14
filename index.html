@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>GymApp | La app móvil de tu gimnasio, con tu marca</title>
+<meta name="description" content="Una aplicación móvil para los socios de tu gimnasio, con tu nombre, tus colores y solo las funciones que necesitas. Para Android e iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Tu gimnasio. Tu app.">
+<meta property="og:description" content="La app móvil de tu gimnasio, con tu nombre, tus colores y solo las funciones que necesitas.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bebas-neue-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="video/fondo-claro.png" media="(min-width: 900px) and (prefers-color-scheme: light)">
+<link rel="preload" as="image" href="video/fondo-oscuro.png" media="(min-width: 900px) and (prefers-color-scheme: dark)">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="envoltura dentro">
+    <a class="logo" href="#inicio" aria-label="GymApp, inicio">GymApp</a>
+    <a class="boton sec" href="#contacto" data-magnetico>Solicitar demo</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- 1. Portada -->
+  <div class="portada-marco">
+  <div class="fondo-video" aria-hidden="true"><video id="fondo-video" muted loop playsinline preload="none" tabindex="-1"></video></div>
+  <div class="envoltura portada" id="inicio">
+    <div class="fantasma" aria-hidden="true" data-parallax>App</div>
+    <h1 class="titular h1" aria-label="Tu gimnasio. Tu app.">
+      <span>Tu</span>
+      <span>gimnasio.</span>
+      <span>Tu app.</span>
+    </h1>
+    <p class="texto entra">Una aplicación móvil para tus socios con tu nombre, tus colores y solo las funciones que necesitas. No tienes que adaptar tu gimnasio a un software genérico. Te enseñamos la demo con tu marca antes de que decidas nada.</p>
+    <div class="acciones entra-2">
+      <a class="boton" href="#contacto" data-magnetico>Solicitar demo gratis</a>
+      <a class="boton sec" href="#configurador" data-magnetico>Ver cómo sería la tuya</a>
+    </div>
+    <dl class="cifras-clave entra-2">
+      <div><dt>ejercicios de serie</dt><dd>50</dd></div>
+      <div><dt>módulos a tu gusto</dt><dd>4</dd></div>
+      <div><dt>Android e iPhone</dt><dd>2</dd></div>
+    </dl>
+  </div>
+  </div>
+
+  <!-- 2. Escena firma -->
+  <section class="escena" id="escena" aria-labelledby="t-escena">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Cómo se hace tuya</p>
+        <h2 class="titular h2" id="t-escena" data-lineas>De app genérica a la de tu gimnasio</h2>
+      </div>
+      <div class="escena-marco">
+        <ol class="pasos-escena" id="pasos-escena">
+          <li class="paso-escena"><span class="num">01</span><div><h3>Una app cualquiera</h3><p>Sin nombre, sin color, con todas las funciones. Es lo que tendrían tus socios con un software genérico.</p></div></li>
+          <li class="paso-escena"><span class="num">02</span><div><h3>Tu nombre</h3><p>El de tu gimnasio, en la app, en el icono del móvil y en las tiendas.</p></div></li>
+          <li class="paso-escena"><span class="num">03</span><div><h3>Tu color</h3><p>El de tu marca en botones y elementos activos, en modo claro y oscuro, siempre legible.</p></div></li>
+          <li class="paso-escena"><span class="num">04</span><div><h3>Tu letra</h3><p>La tipografía de tus títulos y cifras, la que ya usas en tu rótulo o en tu web.</p></div></li>
+          <li class="paso-escena"><span class="num">05</span><div><h3>Solo lo que usas</h3><p>Lo que no necesitas desaparece: ni una función de más para tus socios.</p></div></li>
+        </ol>
+        <div class="escena-tel">
+          <div class="tel" id="tel-escena" role="img" aria-label="Móvil de ejemplo con la app de un gimnasio ficticio llamado Iron Club">
+            <div class="pantalla">
+              <div class="estado"><span>9:41</span><span>5G</span></div>
+              <div class="cab-tel"><div class="sub">Hola, Carlos</div><div class="gim" data-gim>Iron Club</div></div>
+              <div class="cuerpo">
+                <div class="cifras">
+                  <div class="cifra"><div class="n">128</div><div class="l">Entrenos completados</div></div>
+                  <div class="cifra peq"><div class="n">−1,2</div><div class="l">Peso 30 días (kg)</div></div>
+                </div>
+                <div class="cta-tel">Empezar entreno</div>
+                <div class="fila"><div><b>Empuje A</b><br><span>Press banca, hombros, tríceps</span></div><div class="punto"></div></div>
+                <div class="fila"><div><b>Pierna</b><br><span>Sentadilla, prensa, femoral</span></div></div>
+              </div>
+              <div class="tabs">
+                <div class="on"><i></i>Rutinas</div>
+                <div><i></i>Ejercicios</div>
+                <div><i></i>Historial</div>
+                <div data-tab-aforo hidden><i></i>Aforo</div>
+                <div><i></i>Perfil</div>
+              </div>
+            </div>
+          </div>
+          <p class="nota">Maqueta con datos de ejemplo. Iron Club es un gimnasio inventado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Configurador -->
+  <section class="inv" id="configurador" aria-labelledby="t-conf">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Pruébalo ahora</p>
+        <h2 class="titular h2" id="t-conf" data-lineas>¿Cómo sería la app de tu gimnasio?</h2>
+        <p class="texto">Cambia el nombre, el color, la letra y las funciones. La vista previa cambia al momento. Ni se guarda ni se envía nada.</p>
+      </div>
+      <div class="conf">
+        <div class="controles">
+          <div class="campo">
+            <label for="c-nombre">Nombre del gimnasio</label>
+            <input type="text" id="c-nombre" value="Iron Club" maxlength="28" autocomplete="off">
+          </div>
+          <fieldset class="campo">
+            <legend>Color de marca</legend>
+            <div class="muestras" id="c-muestras"></div>
+          </fieldset>
+          <fieldset class="campo">
+            <legend>Letra de títulos y cifras</legend>
+            <div class="seg" id="c-letras">
+              <button type="button" data-letra="cond" aria-pressed="true">Condensada</button>
+              <button type="button" data-letra="ancha" aria-pressed="false">Redonda</button>
+            </div>
+          </fieldset>
+          <fieldset class="campo">
+            <legend>Tema de la app</legend>
+            <div class="seg" id="c-temas">
+              <button type="button" data-tema="oscuro" aria-pressed="true">Oscuro</button>
+              <button type="button" data-tema="claro" aria-pressed="false">Claro</button>
+            </div>
+          </fieldset>
+          <fieldset class="campo">
+            <legend>Funciones opcionales</legend>
+            <div class="mods">
+              <label class="mod"><input type="checkbox" id="c-aforo" checked><div><b>Aforo</b><span>Tus socios ven si el gimnasio está tranquilo o lleno antes de salir de casa.</span></div></label>
+              <label class="mod"><input type="checkbox" id="c-inc" checked><div><b>Incidencias</b><span>Avisan de una máquina rota o de la limpieza desde la app, y tú lo gestionas.</span></div></label>
+              <label class="mod"><input type="checkbox" id="c-ret" checked><div><b>Retención</b><span>Un panel para ti que señala qué socios han dejado de venir.</span></div></label>
+              <label class="mod"><input type="checkbox" id="c-peso" checked><div><b>Peso corporal</b><span>Cada socio registra su peso y ve su evolución.</span></div></label>
+            </div>
+            <p class="siempre">Siempre incluido: entrenamiento en vivo, rutinas, biblioteca de ejercicios, historial y récords.</p>
+          </fieldset>
+        </div>
+        <div class="conf-tel">
+          <div class="tel" id="tel-conf" role="img" aria-label="Vista previa de la app con los cambios elegidos">
+            <div class="pantalla">
+              <div class="estado"><span>9:41</span><span>5G</span></div>
+              <div class="cab-tel"><div class="sub">Hola, Carlos</div><div class="gim" data-gim>Iron Club</div></div>
+              <div class="cuerpo">
+                <div class="cifras">
+                  <div class="cifra"><div class="n">128</div><div class="l">Entrenos completados</div></div>
+                  <div class="cifra peq" data-mod="peso"><div class="n">−1,2</div><div class="l">Peso 30 días (kg)</div></div>
+                </div>
+                <div class="cta-tel">Empezar entreno</div>
+                <div class="fila"><div><b>Empuje A</b><br><span>Press banca, hombros, tríceps</span></div><div class="punto"></div></div>
+                <div class="fila"><div><b>Pierna</b><br><span>Sentadilla, prensa, femoral</span></div></div>
+                <div class="fila" data-mod="inc"><div><b>¿Algo no funciona?</b><br><span>Avísanos desde aquí</span></div></div>
+              </div>
+              <div class="tabs" data-tabs></div>
+            </div>
+          </div>
+          <div class="chip" data-mod="ret">Panel del gimnasio: retención de socios activa</div>
+          <p class="nota-pie">Maqueta ilustrativa, no una captura de la app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Para los socios (bento) -->
+  <section aria-labelledby="t-socios">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Para tus socios</p>
+        <h2 class="titular h2" id="t-socios" data-lineas>Entrenar con la app es más fácil que con una libreta</h2>
+      </div>
+      <div class="bento">
+        <article class="celda c-vivo" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="aviso-ej">Datos de ejemplo</p>
+          <h3>Entreno en vivo</h3>
+          <p>Marcan cada serie con su peso y repeticiones. El descanso arranca solo y no se pierde nada si se va la cobertura.</p>
+          <table class="tabla-series">
+            <caption class="solo-lectores">Series de Press de banca</caption>
+            <thead><tr><th scope="col">Serie</th><th scope="col">Kg</th><th scope="col">Reps</th><th scope="col">Hecha</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>60</td><td>10</td><td class="hecho" data-serie>✓</td></tr>
+              <tr><td>2</td><td>65</td><td>8</td><td class="hecho" data-serie>✓</td></tr>
+              <tr><td>3</td><td>65</td><td>8</td><td class="hecho" data-serie>✓</td></tr>
+              <tr><td>4</td><td>67,5</td><td>6</td><td class="pend">—</td></tr>
+            </tbody>
+          </table>
+          <div class="descanso"><span class="etiqueta">Descanso</span><span class="num" data-cuenta-atras>01:30</span></div>
+        </article>
+        <article class="celda c-record" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="aviso-ej">Datos de ejemplo</p>
+          <h3>Récords automáticos</h3>
+          <div class="record-num"><span class="num" data-cuenta="2.5" data-decimales="1" data-prefijo="+">+2,5</span><span class="etiqueta">kg en press banca</span></div>
+          <div class="barras">
+            <div class="barra"><span>Antes</span><span class="pista"><i class="relleno" style="--w: 80%"></i></span><span class="num">62,5</span></div>
+            <div class="barra mejor"><span>Ahora</span><span class="pista"><i class="relleno" style="--w: 84%"></i></span><span class="num">65,0</span></div>
+          </div>
+          <p>La app avisa cuando baten su mejor peso, su mejor volumen o su marca estimada. Es lo que les hace volver.</p>
+        </article>
+        <article class="celda c-hist" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="aviso-ej">Datos de ejemplo</p>
+          <h3>Historial</h3>
+          <div class="calendario" id="calendario" role="img" aria-label="Calendario de ejemplo con 3 semanas de entrenos"><i data-n="0"></i><i data-n="2"></i><i data-n="0"></i><i data-n="3"></i><i data-n="1"></i><i data-n="0"></i><i data-n="0"></i><i data-n="2"></i><i data-n="0"></i><i data-n="3"></i><i data-n="2"></i><i data-n="0"></i><i data-n="1"></i><i data-n="0"></i><i data-n="3"></i><i data-n="1"></i><i data-n="0"></i><i data-n="2"></i><i data-n="3"></i><i data-n="0"></i><i data-n="0"></i><i data-n="0"></i><i data-n="2"></i><i data-n="3"></i><i data-n="0"></i><i data-n="1"></i><i data-n="2"></i><i data-n="0"></i><i data-n="1"></i><i data-n="0"></i><i data-n="2"></i><i data-n="3"></i><i data-n="0"></i><i data-n="0"></i><i data-n="1"></i><i data-n="0"></i><i data-n="3"></i><i data-n="0"></i><i data-n="2"></i><i data-n="1"></i><i data-n="0"></i><i data-n="0"></i></div>
+          <p>Todo lo que han entrenado, mes a mes, con el músculo trabajado en cada sesión.</p>
+        </article>
+        <article class="celda c-rutinas" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <div><p class="etiqueta">Y además</p><p class="gigante">Rutinas propias</p></div>
+          <p>Crean las suyas, las comparten como texto y la app recuerda con qué pesos terminaron la última vez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Para el dueño -->
+  <section class="inv" aria-labelledby="t-dueno">
+    <div class="envoltura dueno">
+      <div class="afirma" data-revela>
+        <p class="etiqueta">Para ti, que diriges el gimnasio</p>
+        <h2 class="titular h2" id="t-dueno" data-lineas>Sabes qué pasa en tu sala sin preguntar</h2>
+      </div>
+      <div>
+        <ul class="lista-simple" data-cascada>
+          <li><b>Altas con tu aprobación</b><span>Nadie usa la app hasta que tú o tu equipo lo aprobáis.</span></li>
+          <li><b>Incidencias en un solo sitio</b><span>Se acabaron los avisos perdidos entre mensajes de WhatsApp.</span></li>
+          <li><b>Tus datos son tuyos</b><span>Cada gimnasio tiene su propia base de datos, separada de las demás.</span></li>
+          <li><b>Aforo y retención</b><span>Se activan cuando conectamos la asistencia de tu gimnasio, por ejemplo con tu torno o control de acceso. Lo vemos contigo en la demo.</span></li>
+          <li><b>Con tu marca en las tiendas</b><span>La app se publica con tu nombre y tu icono, para Android e iPhone.</span></li>
+        </ul>
+        <div class="aforo">
+          <p class="etiqueta">Ejemplo de afluencia de un día · Datos de ejemplo</p>
+          <div class="aforo-barras" id="aforo" role="img" aria-label="Gráfico de ejemplo de afluencia por horas: tranquilo por la mañana, lleno a las 19 horas"><i class="t" style="--h:22%"></i><i class="t" style="--h:30%"></i><i class="t" style="--h:38%"></i><i class="m" style="--h:45%"></i><i class="m" style="--h:50%"></i><i class="t" style="--h:42%"></i><i class="t" style="--h:34%"></i><i class="t" style="--h:36%"></i><i class="m" style="--h:55%"></i><i class="l" style="--h:80%"></i><i class="l" style="--h:96%"></i><i class="l" style="--h:90%"></i><i class="m" style="--h:62%"></i><i class="t" style="--h:40%"></i></div>
+          <div class="aforo-ejes" aria-hidden="true"><span>7 h</span><span>13 h</span><span>20 h</span></div>
+          <div class="leyenda"><span style="--c: var(--ok-fill)">Tranquilo</span><span style="--c: var(--warn-fill)">Moderado</span><span style="--c: var(--bad-fill)">Muy concurrido</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. A medida -->
+  <section class="medida" aria-labelledby="t-medida">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">A medida</p>
+        <h2 class="titular h2" id="t-medida" data-lineas>Si tu gimnasio necesita algo más, se construye</h2>
+        <p class="texto">Estas funciones no vienen de serie. Se desarrollan para ti sobre la misma base, con presupuesto cerrado antes de empezar.</p>
+      </div>
+    </div>
+    <div class="marquesina" aria-label="Ejemplos de funciones a medida: reservas de clases, pistas de pádel, puntos por asistir, planes de nutrición, comunidad">
+      <div class="pista">
+        <div class="grupo"><span>Reservas de clases</span><span class="sep">/</span><span>Pistas de pádel</span><span class="sep">/</span><span>Puntos por asistir</span><span class="sep">/</span><span>Nutrición</span><span class="sep">/</span><span>Comunidad</span><span class="sep">/</span></div>
+        <div class="grupo" aria-hidden="true"><span>Reservas de clases</span><span class="sep">/</span><span>Pistas de pádel</span><span class="sep">/</span><span>Puntos por asistir</span><span class="sep">/</span><span>Nutrición</span><span class="sep">/</span><span>Comunidad</span><span class="sep">/</span></div>
+      </div>
+    </div>
+    <div class="envoltura pie-medida"><p class="texto">Ninguna de estas funciones existe todavía: se construyen bajo encargo.</p></div>
+  </section>
+
+  <!-- 6b. Planes -->
+  <section class="inv" id="planes" aria-labelledby="t-planes">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Planes</p>
+        <h2 class="titular h2" id="t-planes" data-lineas>Un precio claro, sin sorpresas</h2>
+        <p class="texto">Un pago único por preparar y publicar tu app, y una cuota mensual por el alojamiento, las copias de seguridad y el soporte. Precio cerrado por escrito antes de empezar.</p>
+      </div>
+      <div class="planes">
+        <article class="celda plan" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="etiqueta">Para empezar</p>
+          <h3>Básico</h3>
+          <p class="plan-precio"><span class="num">790 €</span><span class="etiqueta">pago único</span></p>
+          <p class="plan-cuota">Cuota: 79 €/mes</p>
+          <ul class="plan-lista">
+            <li>Tu nombre, tu color y tu letra</li>
+            <li>Entreno en vivo, rutinas, historial y récords</li>
+            <li>Biblioteca de ejercicios</li>
+            <li>Publicada en Android e iPhone</li>
+          </ul>
+        </article>
+        <article class="celda plan destacado" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="etiqueta">Recomendado</p>
+          <h3>Pro</h3>
+          <p class="plan-precio"><span class="num">1.490 €</span><span class="etiqueta">pago único</span></p>
+          <p class="plan-cuota">Cuota: 149 €/mes</p>
+          <ul class="plan-lista">
+            <li>Todo lo del plan Básico</li>
+            <li>Aforo, incidencias y retención de socios</li>
+            <li>Peso corporal de cada socio</li>
+            <li>Panel para ti, que diriges el gimnasio</li>
+          </ul>
+        </article>
+        <article class="celda plan" data-celda>
+          <span class="brillo" aria-hidden="true"></span>
+          <p class="etiqueta">Para necesidades propias</p>
+          <h3>A medida</h3>
+          <p class="plan-precio"><span class="num">desde 2.490 €</span><span class="etiqueta">pago único</span></p>
+          <p class="plan-cuota">Cuota: desde 249 €/mes</p>
+          <ul class="plan-lista">
+            <li>Todo lo del plan Pro</li>
+            <li>Conexión con tu torno o control de acceso</li>
+            <li>Funciones nuevas bajo encargo</li>
+            <li>Presupuesto cerrado antes de empezar</li>
+          </ul>
+        </article>
+      </div>
+      <p class="plan-nota">El IVA se detalla en la propuesta. Para publicar con tu nombre hacen falta las cuentas de desarrollador de Google y Apple; te ayudamos a crearlas y su coste lo asume tu gimnasio.</p>
+    </div>
+  </section>
+
+  <!-- 7. Cómo trabajamos -->
+  <section aria-labelledby="t-camino">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Cómo trabajamos</p>
+        <h2 class="titular h2" id="t-camino" data-lineas>De la primera llamada a tus socios entrenando</h2>
+      </div>
+      <ol class="camino" id="camino">
+        <svg class="camino-trazo" aria-hidden="true" focusable="false"><line class="base" x1="1" y1="0" x2="1" y2="100%"/><line class="traza" x1="1" y1="0" x2="1" y2="100%" pathLength="1"/></svg>
+        <li><span class="num">01</span><div><h3>Nos cuentas cómo funciona tu gimnasio</h3><p>Horarios, torno o control de acceso y qué quieres que vean tus socios.</p></div></li>
+        <li><span class="num">02</span><div><h3>Preparamos tu app</h3><p>Tu nombre, tu logo, tus colores, tu letra y las funciones que elijas.</p></div></li>
+        <li><span class="num">03</span><div><h3>La pruebas en tu móvil</h3><p>Antes de publicar nada, la ves funcionando y pides cambios.</p></div></li>
+        <li><span class="num">04</span><div><h3>La publicamos</h3><p>En Google Play y App Store, con tu marca, y tus socios empiezan a darse de alta.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 8. Preguntas -->
+  <section class="inv" aria-labelledby="t-preg">
+    <div class="envoltura">
+      <div class="cab" data-revela>
+        <p class="etiqueta">Preguntas</p>
+        <h2 class="titular h2" id="t-preg" data-lineas>Lo que suelen preguntar</h2>
+      </div>
+      <div class="preguntas">
+        <details><summary>¿Cuánto cuesta?</summary><p>Hay tres planes: Básico (790 € de pago único y 79 €/mes), Pro (1.490 € y 149 €/mes) y A medida (desde 2.490 € y desde 249 €/mes). Te damos el precio cerrado por escrito en la demo, sin compromiso.</p></details>
+        <details><summary>¿Qué incluye la cuota mensual?</summary><p>El alojamiento de tu base de datos y de la app, las copias de seguridad y el soporte.</p></details>
+        <details><summary>¿Puedo cancelar la cuota?</summary><p>Sí, avisando con 30 días de antelación. Tu gimnasio conserva sus datos y acordamos por escrito cómo entregártelos.</p></details>
+        <details><summary>¿La app lleva mi nombre en las tiendas?</summary><p>Sí. Se publica con el nombre, el icono y las capturas de tu gimnasio. Para eso hace falta crear las cuentas de desarrollador correspondientes, y te ayudamos con ello.</p></details>
+        <details><summary>¿Funciona en Android y en iPhone?</summary><p>Sí, en los dos.</p></details>
+        <details><summary>¿Quién tiene los datos de mis socios?</summary><p>Tu gimnasio. Cada uno tiene su propia base de datos, separada de la de cualquier otro cliente.</p></details>
+        <details><summary>¿Cómo se da de alta un socio?</summary><p>Se registra desde la app con su correo y tú o tu equipo lo aprobáis. Hasta entonces no ve nada.</p></details>
+        <details><summary>¿Puedo quitar funciones que no necesito?</summary><p>Sí: aforo, incidencias, retención y peso corporal se pueden desactivar. Puedes probarlo en el configurador de arriba.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Contacto -->
+  <section class="contacto" id="contacto" aria-labelledby="t-contacto">
+    <div class="envoltura">
+      <p class="etiqueta" data-revela>Solicitar demo</p>
+      <h2 class="titular h2" id="t-contacto" data-lineas>Cuéntanos cómo es tu gimnasio</h2>
+      <p class="texto" style="margin-top: 20px;" data-revela>Escríbenos con el nombre de tu gimnasio y te enseñamos la app con tu marca. Respondemos con una propuesta cerrada.</p>
+      <div class="acciones" data-revela style="margin-top: 28px;">
+        <a class="boton" href="mailto:maraugn@gmail.com?subject=Quiero%20ver%20la%20demo%20de%20GymApp&amp;body=Hola%2C%20mi%20gimnasio%20se%20llama%3A%0AMi%20nombre%3A%0ATel%C3%A9fono%20(opcional)%3A%0AFunciones%20que%20me%20interesan%3A" data-magnetico>Pedir la demo por correo</a>
+      </div>
+      <div class="correo" data-revela>
+        <code id="correo">maraugn@gmail.com</code>
+        <button type="button" class="boton" id="copiar" data-magnetico>Copiar correo</button>
+        <span class="estado-copia" id="copiado" role="status"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="envoltura pie">
+  <span>GymApp · maraugn@gmail.com</span>
+  <span>Las maquetas usan datos de ejemplo.</span>
+</footer>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<script src="js/gsap.min.js" defer></script>
+<script src="js/ScrollTrigger.min.js" defer></script>
+<script src="js/SplitText.min.js" defer></script>
+<script src="js/CustomEase.min.js" defer></script>
+<script src="js/lenis.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
